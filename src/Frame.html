@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Jane Doe - Portfolio</title>
+    <link href="Styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="head_container">
+        <div><h1 id="ProfileName">John Doe</h1>
+            <p>Full Stack Developer</p>
+            <p>Email: jdoe@email.com | Phone: +123456789</p>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="about_me_container" id="about"
+         style="display: flex;justify-content:center;align-items: center;flex-direction:row;">
+    <div style="margin:50px;">
+        <h2>About Me</h2>
+        <img alt="Profile Image" id="ProfileImage" src="photos/profile_pic.png">
+    </div>
+    <div style="font-size:20px;margin:50px;">
+        <p> Greetings! I am John Doe, a Full Stack Developer who believes that software should be logical, efficient,
+            and,
+            above all, correct. I have experience in working with several languages, such as Python, C++, PHP and,
+            please forgive
+            me for uttering this word, JavaScript</p>
+        <p> If you’re looking for someone who blends logical thinking and efficiency, let’s connect.
+            No unnecessary complexity—just clean, effective solutions!</p>
+    </div>
+</section>
+<section class="container" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill"><img alt="" src="photos/python.png"> Python<br><br>2 years</div>
+        <div class="skill"><img alt="" src="photos/cpp.png"> C++<br><br>1 year</div>
+        <div class="skill"><img alt="" src="photos/php.png"> PHP<br><br>3 year</div>
+        <div class="skill"><img alt="" src="photos/html_icon.png"> HTML<br><br>2 years</div>
+        <div class="skill"><img alt="" src="photos/css_icon.png"> CSS<br><br>2 years</div>
+        <div class="skill"><img alt="" src="photos/javascript_icon.png"> JavaScript<br><br>2 years</div>
+    </div>
+</section>
+<section class="container" id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Calculator:</strong> An Innovative and Bug Free Calculator.
+            Other Calculators will say that 2+'2'='Hello World', which is, of course, WRONG! Everybody knows that 2+'2'
+            is 22,
+            as the noble JavaScript wisdom teaches, as well as my calculator.
+        </li>
+        <li><strong>Hello World Writer:</strong> When you simply want to say
+            'HELLO' to the World ^_^
+        </li>
+        <li><strong>ICBM Missile Control
+            Systems:</strong> ...We don't talk about this one...
+        </li>
+    </ul>
+</section>
+<section class="container" id="recommendations">
+    <h2>Recommendations</h2>
+    <div class="recommendation">
+        "John is a problem-solver with an exceptional ability to break down complex challenges into efficient
+        solutions."
+        <div class="author">— Emily R., Software Engineer</div>
+    </div>
+    <div class="recommendation">
+        "His attention to detail and commitment to writing clean, maintainable code is something every team needs."
+        <div class="author">— Michael T., Lead Developer</div>
+    </div>
+    <div class="recommendation">
+        "John’s ability to adapt quickly to new technologies and frameworks makes him an invaluable asset to any
+        project."
+        <div class="author">— Sarah K., Project Manager</div>
+    </div>
+</section>
+<section class="container" id="leave-recommendation">
+    <h2>Leave a Recommendation</h2>
+    <form>
+        <div>
+            <label for="RecName"></label><input id="RecName" placeholder="Name (Optional)" type="text"/>
+        </div>
+        <div>
+            <label for="RecMessage"></label><textarea id="RecMessage" placeholder="Message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<div class="hidden" id="Popup">Thank you for submitting a recommendation!</div>
+<script src="XScript.js"></script>
+</body>
+</html>
