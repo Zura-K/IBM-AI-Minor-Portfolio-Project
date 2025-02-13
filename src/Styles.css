@@ -42,7 +42,17 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+nav ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+
 
 #projects ul {
     list-style-type: none; /* Removes default bullet points */
@@ -186,3 +196,32 @@ button {
 button:hover {
     background: #4a00b4;
 }
+
+.home-icon {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    vertical-align: middle; /* Aligns the icon with text */
+    margin-right: 8px; /* Spacing between icon and text */
+}
+
+#Popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6200ea;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#Popup:not(.hidden) {
+    display: block;
+    opacity: 1;
+}
+

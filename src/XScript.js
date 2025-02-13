@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     const Form = document.querySelector('form');
-    const Popup = document.getElementById('Popup');
     const RecommendationSection = document.getElementById('recommendations');
 
     Form.addEventListener('submit', function(Event) {
@@ -30,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         Form.reset();
 
-        Popup.classList.remove('hidden');
-        setTimeout(() => {
-            Popup.classList.add('hidden');
-        }, 3000);
+        // **Show a pop-up alert message**
+        alert("Thank you for submitting a recommendation!");
     });
 });
